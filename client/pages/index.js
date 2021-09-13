@@ -41,7 +41,7 @@ LandingPage.getInitialProps = async (context, client, currentUser) => {
 	// client, currentUser are coming form the _app getInitialProps.
 	const { data } = await client.get('/api/tickets');
 
-	return { tickets: data };
+	return { tickets: data || [] };
 
 	// Everything is now at BuildClient file now
 	// if (typeof window === 'undefined') {
