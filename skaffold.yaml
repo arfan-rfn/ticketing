@@ -20,7 +20,7 @@ build:
           - src: 'src/**/*.ts'
             dest: .
 
-    - image: arfanrfn/next-client
+    - image: arfanrfn/client
       context: client
       docker:
         dockerfile: Dockerfile
